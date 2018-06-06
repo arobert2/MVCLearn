@@ -13,9 +13,9 @@ namespace MVCLearn.Controllers
     public class HelloWorldController : Controller
     {
         // GET: /<controller>/
-        public string Index()
+        public IActionResult Index()
         {
-            return "This is my default actions...";
+            return View();
         }
 
         public string Welcome(string name, int numTimes = 1)
